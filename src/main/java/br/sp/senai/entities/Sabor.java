@@ -1,7 +1,7 @@
 package br.sp.senai.entities;
 
 public class Sabor {
-	private Integer id;
+	private String id;
 	private String name;
 	private String desc;
 	private Double price;
@@ -10,18 +10,18 @@ public class Sabor {
 		
 	}
 	
-	public Sabor(Integer id, String name, String desc, Double price) {
+	public Sabor(String id, String name, String desc, Double price) {
 		this.id = id;
 		this.name = name;
 		this.desc = desc;
 		this.price = price;
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

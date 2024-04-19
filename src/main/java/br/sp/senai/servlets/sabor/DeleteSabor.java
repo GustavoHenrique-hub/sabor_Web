@@ -20,7 +20,7 @@ public class DeleteSabor extends HttpServlet {
 		// TODO Auto-generated method stub
 		PrintWriter pw = res.getWriter();
 		
-		Integer id = Integer.parseInt(req.getParameter("ID"));
+		String id = req.getParameter("ID");
 		
 		Sabor sabor = new Sabor();
 		sabor.setId(id);

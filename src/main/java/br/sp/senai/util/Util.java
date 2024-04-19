@@ -26,10 +26,10 @@ public class Util {
 			strBuffer.append("<label> Price: " + sabores.getPrice() + "</label></br>");
 			strBuffer.append("<label> Id: " + sabores.getId() + "</label></br>");
 
-			strBuffer.append("<a href='/Web_teste/deleteSabor?ID='" + sabores.getId() + "'>Delete</a>");
-			strBuffer.append("<a href='/Web_teste/alteraSabor?ID='" + sabores.getId() + "'>Alterar</a></br>");
+			strBuffer.append("<a href='/Web_teste/deleteSabor?ID=" + sabores.getId() + "'>Delete</a>");
+			strBuffer.append("<a href='/Web_teste/alteraSabor?ID=" + sabores.getId() + "'>Alterar</a></br>");
 		}
-
+		strBuffer.append("<button onclick= \"window.location.href = '/Web_teste/novoSabor.html'\">Voltar</button></br>");
 		strBuffer.append("</body>");
 		strBuffer.append("</html>");
 

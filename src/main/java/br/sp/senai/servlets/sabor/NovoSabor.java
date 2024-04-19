@@ -20,7 +20,7 @@ public class NovoSabor extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter pw = res.getWriter();
 		
-		Integer id = Integer.parseInt(req.getParameter("ID"));
+		String id = req.getParameter("ID");
 		String name = req.getParameter("NAME");
 		String desc = req.getParameter("DESC");
 		Double price = Double.parseDouble(req.getParameter("PRICE"));
